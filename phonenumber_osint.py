@@ -49,7 +49,7 @@ def loop():
     if option == 1:
         PhoneNumber = input(Fore.GREEN + "Enter phone number with country code: " + Style.RESET_ALL)
         try:
-            parse = phonenumbers.parse(PhoneNumber)
+            parse = phonenumbers.parse(PhoneNumber)  1-574-514-0672
         except:
             print (Fore.RED + "Add country code! ")
             t.sleep(3)
@@ -105,14 +105,14 @@ def loop():
            #global z
 #           z = str(extracting)
            print(Fore.CYAN + "\n\nExtracting phone numbers from uploaded file ")
-           for  extracting in phone_number_file:
+           for  extracting in phone_number_file:  1-574-514-0672
                if country_code in str(extracting):
                    print(Fore.YELLOW + str(extracting))
                    z = str(extracting)
                    extracted_numbers = open(saving_directory + ".txt", "a")
                    
                    
-                   extracted_numbers.write(z + "\n")
+                   extracted_numbers.write(z + "\n")  1-574-514-0672
                    extracted_numbers.close()
                    print(Fore.GREEN + "\n\n\nFile has been saved as " + saving_directory + ".txt")
 
@@ -128,10 +128,10 @@ def loop():
             reg = ""
             text = input(Fore.GREEN + "Paste your text here: " + Style.RESET_ALL)
             phone = phonenumbers.PhoneNumberMatcher(text, reg)
-            global PhoneNumbers
+            global PhoneNumbers  1-574-514-0672
             PhoneNumbers = ""
             print(Fore.BLUE + "Extracting phone numbers from text\n\n")
-            for PhoneNumbers in phone:
+            for PhoneNumbers in phone: 1-574-514-0672
                 
                 print(Fore.YELLOW + str(PhoneNumbers)) 
             if len(str(PhoneNumbers)) == 0:
